@@ -6,9 +6,11 @@ class CreateList(forms.ModelForm):
             "class":'form-control form-control-md',
         }
     ))
-    content = forms.CharField(label="Content",max_length=10000,widget=forms.TextInput(
+    content = forms.CharField(label="Content",max_length=10000,widget=forms.Textarea(
         attrs={
             "class":'form-control form-control-lg',
+            "id":"exampleFormControlTextarea1",
+            "rows":"4",
             
         }
     ))
