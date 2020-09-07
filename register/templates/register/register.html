@@ -9,7 +9,7 @@
 <form method="POST" action="/register/">
 {{ form|crispy }}
 {% csrf_token %}
-<button type="submit"  class="btn btn-success">Register</button>
+<input type="submit"  class="btn btn-success" value="Register">
 <a href="/login" class="btn btn-success">Sign in <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></a>
 </form>
 {% endblock %}
