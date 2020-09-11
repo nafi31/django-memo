@@ -19,5 +19,5 @@ class CreateList(forms.ModelForm):
     class Meta:
         model = Item
         fields = ('content',)
-        models = Title
+        model = Title
         fields = ('title',)
